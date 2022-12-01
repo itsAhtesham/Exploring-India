@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="wickedcss.min.css">
+  <link rel="icon" type="image/x-icon"
+    href="data:image/png;base64,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">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="mscbot-main/static/css/chat.css">
+  <link rel="stylesheet" href="mscbot-main/static/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #0b5e0b; padding: 15px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.webp" alt="Logo" width="50" height="30" class="d-inline-block align-text-top">
+          India
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="punjab.html">Punjab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rajasthan.html">Rajasthan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jammukashmir.html">Jammu & Kashmir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uttarpradesh.html">Uttar Pradesh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kerala.html">Kerala</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assam.html">Assam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delhi.html">Delhi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="goa.html">Goa</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-light d-flex" type="submit" style="border-radius: 60px; color:darkgreen"
+            data-bs-toggle="modal" data-bs-target="#newsletterModal">Subscribe to our Newsletter</button>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="newsletterModalLabel">Newsletter Subscription :D</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Enter your Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-success" style="border-radius: 60px; color:darkgreen">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <section class="founder">
+    <div class="wrap-banner-bg">
+      <img src="images/Quotes-by-Mahatma-Gandhi_1.jpg" class="floater" alt="" height="500px"
+        style="  border-radius: 80px; margin-top: 50px">
+    </div>
+  </section> -->
+  <div style="justify-items: center;">
+    <img src="images/Exploring India....png" alt="not available" width="100%">
+  </div>
+
+  <div style="margin-top: 0px; margin-left: 0px;">
+    <video width="100%" height="600" autoplay muted loop>
+      <source src="video/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <p
+      style="margin:30px;font-family: 'Raleway', sans-serif; word-spacing:0.4em ;line-height: 1.6; font-size: large;font-weight:550;">
+      One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich heritage
+      and myriad attractions, the country is among the most popular tourist destinations in the world. It covers an area
+      of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south.
+      As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by
+      mountains and the sea, which give the country a distinct geographical entity.
+    </p>
+  </div>
+
+
+
+  <section class="location">
+
+    <div class="location-text">
+      <h1 style="font-size: 55px; font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:bolder">Location</h1>
+      <br>
+      <p style="font-weight:550; font-size:large;font-family: 'Raleway', sans-serif;">
+        India is situated north of the equator between 8°4' north (the mainland) to 37°6' north latitude and 68°7' east
+        to 97°25' east longitude.On the south, India projects into and is bounded by the Indian Ocean—in particular, by
+        the Arabian Sea on the west, the Lakshadweep Sea to the southwest, the Bay of Bengal on the east, and the Indian
+        Ocean proper to the south.The northern frontiers of India are defined largely by the Himalayan mountain range,
+        where the country borders China, Bhutan, and Nepal.
+      </p>
+    </div>
+
+    <div class="location-img" style="margin-top:50px ;">
+      <img src="images/location2.png" alt="" style="  border-radius: 80px;height: 350px;">
+    </div>
+
+  </section>
+
+  <div class="container-md">
+    <h1
+      style="margin-bottom:20px;font-size: 65px; font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:bolder; text-align: center;">
+      Popular In India</h1>
+    <p style="text-align: center; margin-bottom:20px;font-size:larger">India is a home to the finest architectural
+      heritage, serene ghats, spectacular landscapes and largest tiger reserve.</p>
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jdfjch8rinc3bmogkyuw/Private%20Tour%20Of%20Taj%20Mahal%20and%20Agra%20Fort%20From%20Agra.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><b>Taj Mahal</b></h5>
+            <p>An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor
+              Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of
+              the universally admired masterpieces of the world's heritage.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/India-Gate.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><b>India Gate</b></h5>
+            <p>India Gate is also known as the All India War Memorial. As the name suggests, this is the symbol of
+              victory during war times, situated along Rajpath, New Delhi, India. The monument is a memorial tribute to
+              70,000 soldiers of the British Indian Army who sacrificed their lives during World War I (1914-1918). The
+              monument is inscribed with the names of 13,300 martyrs including servicemen, officers, and soldiers from
+              the United Kingdom.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Lotus-Temple.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><b>Lotus Temple</b></h5>
+            <p>Welcome to the official website of the Bahai House of Worship, popularly known as the Lotus Temple
+              located in New Delhi, India. Like eight Houses of Worship around the world, this magnificent structure
+              stands for the principle of the oneness of humankind. People of all racial, religious, national
+              backgrounds, are welcomed to pray and meditate within its precincts. It is a collective centre of society
+              to promote cordial affection where everyone is held in its embrace as equals. This edifice is dedicated to
+              the one God, the Creator of all humanity and of the entire universe. </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2018/04/Victoria-Memorial.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><b>Victoria Memorial</b></h5>
+            <p>The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, built between 1906 and
+              1921. It is dedicated to the memory of Queen Victoria, Empress of India from 1876 to 1901.The largest
+              monument to a monarch anywhere in the world, it stands in 64 acres of gardens and is now a museum under
+              the control of the Ministry of Culture.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Mysore-Palace-1.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><b>Mysore Palace</b></h5>
+            <p>The Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house).
+              It is located in Mysore, Karnataka. It used to be the official residence of the Wadiyar dynasty and the
+              seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills
+              eastward.The current structure was constructed between 1897 and 1912, after the Old Palace burnt down, the
+              current structure is also known as the New Fort. Mysore Palace is one of the most famous tourist
+              attractions in India.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <section class="row m-5">
+    <div class="slideRight">
+      <h1 style="text-align: center; font-size: 60px; margin-top: 30px;">Must Visit Destinations</h1>
+    </div>
+    <p style="text-align: center; margin-bottom:20px;font-size:larger">From historical cities to natural splendours,
+      come see the best of India</p>
+    <div class="col-sm-4 mt-4">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201704/647_042717101905.jpg"
+          class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Qutb_Minar" class="link-dark"
+              target="_blank">Qutub Minar</a></h5>
+          <p class="card-text">The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory
+            tower" that forms part of the Qutb complex, which lies at the site of Delhi’s oldest fortified city, Lal
+            Kot, founded by the Tomar Rajputs.It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi,
+            India.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-4">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Red-Fort.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Red_Fort" class="link-dark" target="_blank">Red
+              Fort</a></h5>
+          <p class="card-text">Constructed during the reign of Shah Jahan in the 17thcentury, Red Fort or Lal Qila is
+            one of the most popular historical buildings of India. The main highlights are its massive red sandstone
+            walls, Mughal-style architecture, geometrical gardens, projecting balconies, and the grand palaces and
+            entertainment halls.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 mt-4">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Hawa-mahal.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Hawa_Mahal" class="link-dark"
+              target="_blank">Hawa Mahal</a></h5>
+          <p class="card-text">Hawa Mahal, also known as “Palace of Breeze”, was built in 1799 as an extension to the
+            Royal City Palace of Jaipur.It allows the royal ladies who at the time strictly observed “pardah”, to be
+            able to watch any processions and activities on the street without being seen by the public.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px; background:  #AFE1AF ;">
+        <img src="images/jama-masjid.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Jama_Masjid,_Delhi" class="link-dark"
+              target="_blank">Jama Masjid</a></h5>
+          <p class="card-text">An epitome of calmness and serenity amidst Delhi’s hustle and bustle, Jama Masjid is a
+            must-visit for those seeking spiritual bliss and historical enlightenment. This architectural extravagance
+            by the Mughal Emperor Shah Jahan is constructed with red sandstone and white marble. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px; background:  #AFE1AF ;">
+        <img src="images/3540_golden-temple-1366x768.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Golden_Temple" class="link-dark"
+              target="_blank">Golden Temple</a></h5>
+          <p class="card-text">Also known as Sri Harmandir Sahib, this beautiful religious place of the Sikh community
+            is all about tranquillity, humanity and brotherhood. The two-storied structure has a unique domed
+            architecture, with its top half clad in pure gold and the other half built with white marble.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/gateway_od_India.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Gateway_of_India" class="link-dark"
+              target="_blank">Gateway Of India</a></h5>
+          <p class="card-text">This unique landmark is one of the most important monuments of India. It was constructed
+            in the 20th century and has an Indo-Saracenic style of architecture. Apart from photographing the majestic
+            gateway, you can enjoy the cool sea breeze, relish some delectable street foods or go for a leisurely ferry
+            ride.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/konark-sun-temple-india.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" class="link-dark"
+              target="_blank">Sun Temple</a></h5>
+          <p class="card-text">Dedicated to the Sun God, this temple stands out for its Oriyan form of architecture.
+            Konark Sun Temple was built in the 13th century and is shaped like a massive chariot with stone wheels,
+            walls and pillars. The shrine has a beautifully carved statue of the Sun God, and the walls have images of
+            giraffes, elephants and other animals.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Ellora-Caves.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Ajanta_Caves" class="link-dark"
+              target="_blank">Ajanta And Ellora Caves</a></h5>
+          <p class="card-text">These ancient rock-cut caves are among the most popular tourist attractions in
+            Maharashtra as well as India. Ajanta Caves proudly bear testimony of the earliest Buddhist architecture,
+            paintings and sculptures, while Ellora Caves contain rock carvings, Buddhist monasteries, and Hindu and Jain
+            temples.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Churches-Basilica-of-Bom-Jesus.jpg" class="card-img-top" alt="..."
+          style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Basilica_of_Bom_Jesus" class="link-dark"
+              target="_blank">Basilica of Bom Jesus</a></h5>
+          <p class="card-text">Being the oldest church in Goa, this one is a major tourist-puller. Constructed in the
+            17th century, this Roman Catholic Church holds the mortal relics of St. Francis Xavier. Apart from the
+            beautiful Baroque architecture, the church boasts some of the largest art galleries in Asia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img
+          src="https://images.hindustantimes.com/img/2022/02/10/550x309/Chenab_Bridge_Jammu_and_Kashmir_Twitter_pic_1644468208914_1644468230740.jpg"
+          class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Chenab_Rail_Bridge" class="link-dark"
+              target="_blank">Chenab Bridge</a></h5>
+          <p class="card-text">The Chenab Rail Bridge is a steel and concrete arch bridge between Bakkal and Kauri and
+            just 42 km from main Reasi town in the Reasi district of Jammu and Kashmir, India.The bridge spans the
+            Chenab River at a height of 359 m (1,178 ft) above the river, making it the world's highest rail bridge.The
+            bridge was fully completed and was inaugurated in August 2022</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Dal-Lake.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title"><a href="https://en.wikipedia.org/wiki/Dal_Lake" class="link-dark" target="_blank">Dal
+              Lake</a></h5>
+          <p class="card-text">Srinagar, the summer capital of Jammu & Kashmir (J&K), is split into two by the river
+            Jhelum. The star attraction here is the idyllic Dal Lake, having been ranked TripAdvisor’s top travellers’
+            choice for 2020. You can take a shikara ride in the daytime or a midnight cruise for a romantic evening. You
+            will also spot Asia’s most extensive Tulip Garden and India’s only floating market here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card" style="border-radius: 30px;     background:  #AFE1AF ;">
+        <img src="images/Kaziranga_National_Park.jpg.jpg" class="card-img-top" alt="..." style="border-radius: 30px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title" style="color: #0b5e0b"><a href="https://en.wikipedia.org/wiki/Kaziranga_National_Park"
+              class="link-dark" target="_blank">Kaziranga National Park</a></h5>
+          <p class="card-text">This undisturbed acres long stretch of forests and marshlands is located in the heart of
+            Assam and is visited by hordes of tourists every year and it is one of the famous places to visit in North
+            East India. The notable one-horned Rhino is a major attraction in Kaziranga which is an endangered species
+            in the world.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="fun-facts">
+    <div class="slideLeft">
+      <h1 style="text-align: center; font-size: 55px;">Some Amazing Facts About <span style="color:#0b5e0b">India</span>
+      </h1>
+    </div>
+
+    <br>
+
+    <div class="card" style="width: 100%; border-radius: 80px;  box-shadow: 0 0 0 #ffffff;">
+      <div class="card-body">
+        <ul class="card-text">
+          <li class="list-item">✔ The name 'India' is derived from the River Indus, the valleys around which were the
+            home of the early settlers. The Aryan worshippers referred to the river Indus as the Sindhu.</li>
+          <li class="list-item">✔ India never invaded any country in her last 100000 years of history.
+          </li>
+          <li class="list-item">✔ When many cultures were only nomadic forest dwellers over 5000 years ago, Indians
+            established Harappan culture in Sindhu Valley (Indus Valley Civilization).</li>
+          <li class="list-item">✔ The game of Snakes & Ladders was created by the 13th century poet saint Gyandev. It
+            was originally called 'Mokshapat'. The ladders in the game represented virtues and the snakes indicated
+            vices. The game was played with cowrie shells and dices. In time, the game underwent several modifications,
+            but its meaning remained the same, i.e. good deeds take people to heaven and evil to a cycle of re-births.
+          </li>
+          <li class="list-item">✔ India is the largest democracy in the world, the 7th largest country in the world, and
+            one of the most ancient civilizations.</li>
+          <li class="list-item">✔ The world's highest cricket ground is in Chail, Himachal Pradesh. Built in 1893 after
+            levelling a hilltop, this cricket pitch is 2444 meters above sea level.</li>
+          <li class="list-item">✔ Ayurveda is the earliest school of medicine known to mankind. The Father of Medicine,
+            Charaka, consolidated Ayurveda 2500 years ago.</li>
+          <li class="list-item">✔ Algebra, Trigonometry and Calculus are studies, which originated in India.
+          </li>
+          <li class="list-item">✔ The Art of Navigation & Navigating was born in the river Sindh over 6000 years ago.
+            The very word Navigation is derived from the Sanskrit word 'NAVGATIH'. The word navy is also derived from
+            the Sanskrit word 'Nou'.</li>
+          <li class="list-item">✔ The value of "pi" was first calculated by the Indian Mathematician Budhayana, and he
+            explained the concept of what is known as the Pythagorean Theorem. He discovered this in the 6th century,
+            long before the European mathematicians.</li>
+          <li class="list-item">✔ There are 300000 active mosques in India, more than in any other country, including
+            the Muslim world.</li>
+          <li class="list-item">✔ The world's first university was established in Takshila in 700 BC. More than 10500
+            students from all over the world studied more than 60 subjects. The University of Nalanda built in the 4th
+            century was one of the greatest achievements of ancient India in the field of education.</li>
+          <li class="list-item">✔ India exports software to 90 countries.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container text-center">
+    <h1 style="text-align: center; font-size: 60px; margin-top: 30px;">Popular Trips</h1>
+    <p style="text-align: center; margin-bottom:20px;font-size:larger">Explore the best of India</p>
+    <!-- <button type="button" class="btn btn-outline-success">Two Days</button>
+    <button type="button" class="btn btn-outline-success">Road Trips</button> -->
+    <p></p>
+
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <span style="font-size: large;font-weight: bolder; color: #0b5e0b;">Two Days</span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/48-hours/48-hours-in-delhi.html"><img
+                      src="https://assets.cntraveller.in/photos/62f2461d86695f53fae0ab42/master/pass/long-weekend-delhi.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">48 hours in Delhi</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/48-hours/48-hours-in-chennai.html"><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">48 hours in Chennai</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/48-hours/48-hours-in-bengaluru.html"><img
+                      src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/places-to-visit-in-Bangalore-in-June1.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">48 hours in Bengaluru</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span style="font-size: large;font-weight: bolder; color: #0b5e0b;">Road Trips</span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/road-trips/a-slic-of-serenity-in-ahmedabad.html"><img
+                      src="https://digital.ihg.com/is/image/ihg/crowne-plaza-ahmedabad-8086043573-4x3"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">A Slice Of Serenity <br> In Ahmedabad
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/road-trips/by-the-tungabhadra.html"><img
+                      src="https://www.incredibleindia.org/content/dam/incredible-india-v2/images/places/hyderabad/hydrabad-salarjung-museum-exterior.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">By The Tungabhadra</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/road-trips/a-trip-along-the-coast.html"><img
+                      src="https://in.musafir.com/uploads/5_Most_beautiful_beaches_in_India_6ac2641a85.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">A Trip Along <br> The Coast</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span style="font-size: large;font-weight: bolder; color: #0b5e0b;"> Pan India </span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/pan-india/himalayan-odyssey.html"><img
+                      src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/07/Himachal-Pradesh-cover.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">Himalayan Odyssey</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/pan-india/eastern-vignettes.html"><img
+                      src="https://www.fabhotels.com/blog/wp-content/uploads/2019/12/2-days-trip-to-kolkata-600-1280x720.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">Eastern Vignettes</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="cardx">
+                  <a
+                    href="https://www.incredibleindia.org/content/incredible-india-v2/en/itineraries/pan-india/going-south.html"><img
+                      src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Places-to-visit-in-South-India_600-1280x720.jpg"
+                      class="card-img-top rounded-circle" alt="..." height="200" width="50"></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color:#0b5e0b; padding:10px">Going South</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="arrow">
+    <a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a>
+  </div>
+  <br>
+  <br>
+
+  <div class="text-center" style="margin-top:30px ;">
+
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="punjab.html"
+        class="link-success" style="text-decoration:none;">Punjab</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="rajasthan.html"
+        class="link-success" style="text-decoration:none;">Rajasthan</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="jammukashmir.html"
+        class="link-success" style="text-decoration:none;">Jammu & Kashmir</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="uttarpradesh.html"
+        class="link-success" style="text-decoration:none;">Uttar Pradesh</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="kerala.html"
+        class="link-success" style="text-decoration:none;">Kerala</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="assam.html"
+        class="link-success" style="text-decoration:none;">Assam</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="delhi.html"
+        class="link-success" style="text-decoration:none;">Delhi</a></button>
+    <button type="button" class="btn btn-outline-success" style="border-radius: 60px;"><a href="goa.html"
+        class="link-success" style="text-decoration:none;">Goa</a></button>
+
+
+  </div>
+  <!-- CHAT BAR BLOCK -->
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+      <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+      <div class="full-chat-block">
+        <!-- Message Container -->
+        <div class="outer-container">
+          <div class="chat-container">
+            <!-- Messages -->
+            <div id="chatbox">
+              <h5 id="chat-timestamp"></h5>
+              <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+            </div>
+
+            <!-- User input box -->
+            <div class="chat-bar-input-block">
+              <div id="userInput">
+                <input id="textInput" class="input-box" type="text" name="msg"
+                  placeholder="Tap 'Enter' to send a message">
+                <p></p>
+              </div>
+
+              <div class="chat-bar-icons">
+                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+              </div>
+            </div>
+
+            <div id="chat-bar-bottom">
+              <p></p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="footer">
+    <div class="slideRight">
+      <div class="footer-content">
+        <a href=" https://twitter.com/ItsAhtesham" target="_blank"><i class="fab              fa-twitter-square"
+            style="font-size:35px; color:white;"></i></a>
+        <a href="https://github.com/itsAhtesham" target="_blank"><i class="fab fa-github-square"
+            style="font-size:35px; color:white;"></i></a>
+        <a href="#"><i class="fab fa-instagram-square" style="font-size:35px; color:#ffffff"></i></a>
+        <a href="#"><i class="fab fa-facebook-square" style="font-size:35px; color:#ffffff"></i></a>
+        <a href="#"><i class="fab fa-youtube-square" style="font-size:35px; color:black;"></i></a>
+        <br>
+        <br>
+        <p>Made with love by Ahtesham N Team 🤍 </p>
+        &copy; 2022, INDIA. All rights reserved!
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="mscbot-main/static/scripts/chat.js"></script>
+<script src="mscbot-main/static/scripts/responses.js"></script>
+
+</html>
